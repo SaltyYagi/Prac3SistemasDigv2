@@ -1,0 +1,17 @@
+library ieee;
+use ieee. std_logic_1164 .all;
+
+entity Pract3 is
+	port (
+			clk     : in std_logic ;
+			reset_n : in std_logic ;
+			digito0 : out std_logic;
+			digito1 : out std_logic;
+			digito2 : out std_logic;
+			digito3 : out std_logic;
+			digito4 : out std_logic;
+			digito5 : out std_logic;
+			digito6 : out std_logic;
+			digito7 : out std_logic;
+			salida  : out std_logic_vector (16 downto 0));
+end Pract3 ;
