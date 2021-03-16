@@ -1,5 +1,5 @@
 EDA Netlist Writer report for Pract3
-Tue Mar 16 11:50:03 2021
+Tue Mar 16 17:10:15 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Tue Mar 16 11:50:03 2021 ;
+; EDA Netlist Writer Status ; Successful - Tue Mar 16 17:10:15 2021 ;
 ; Revision Name             ; Pract3                                ;
-; Top-level Entity Name     ; Pract3                                ;
+; Top-level Entity Name     ; Demultiplexor                         ;
 ; Family                    ; Cyclone II                            ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -66,16 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+------------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                                    ;
-+---------------------------------------------------------------------------------------------------------------+
-; Generated Files                                                                                               ;
-+---------------------------------------------------------------------------------------------------------------+
-; C:/Users/roca/Documents/ICAI/Segundo/Sistemas Digitales II/Practica 3/simulation/modelsim/Pract3.vho          ;
-; C:/Users/roca/Documents/ICAI/Segundo/Sistemas Digitales II/Practica 3/simulation/modelsim/Pract3_fast.vho     ;
-; C:/Users/roca/Documents/ICAI/Segundo/Sistemas Digitales II/Practica 3/simulation/modelsim/Pract3_vhd.sdo      ;
-; C:/Users/roca/Documents/ICAI/Segundo/Sistemas Digitales II/Practica 3/simulation/modelsim/Pract3_vhd_fast.sdo ;
-+---------------------------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                    ;
++-----------------------------------------------------------------------------------------------+
+; Generated Files                                                                               ;
++-----------------------------------------------------------------------------------------------+
+; C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Pract3.vho          ;
+; C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Pract3_fast.vho     ;
+; C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Pract3_vhd.sdo      ;
+; C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Pract3_vhd_fast.sdo ;
++-----------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,12 +84,12 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Tue Mar 16 11:50:01 2021
+    Info: Processing started: Tue Mar 16 17:10:14 2021
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off Pract3 -c Pract3
-Info (204026): Generated files "Pract3.vho", "Pract3_fast.vho", "Pract3_vhd.sdo" and "Pract3_vhd_fast.sdo" in directory "C:/Users/roca/Documents/ICAI/Segundo/Sistemas Digitales II/Practica 3/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "Pract3.vho", "Pract3_fast.vho", "Pract3_vhd.sdo" and "Pract3_vhd_fast.sdo" in directory "C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4519 megabytes
-    Info: Processing ended: Tue Mar 16 11:50:03 2021
+    Info: Peak virtual memory: 4527 megabytes
+    Info: Processing ended: Tue Mar 16 17:10:16 2021
     Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 

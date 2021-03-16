@@ -1,5 +1,5 @@
 library ieee;
-use ieee. std_logic_1164 .all;
+use ieee.std_logic_1164 .all;
 
 entity Pract3 is
 	port (
@@ -48,24 +48,28 @@ architecture structural of Pract3 is
 			reset_n => reset_n,
 			en => "01100001", --97=a
 			sal => s3);
+			
 	R4: ENTITY work.Registro
 		port map(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01100011", --99=c
 			sal => s4);
+			
 	R5: ENTITY work.Registro
 		port map(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01100001", --97=a
 			sal => s5);
+			
 	R6: ENTITY work.Registro
 		port map(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01110100", --116=t
 			sal => s6);
+			
 	R7: ENTITY work.Registro
 		port map(
 			clk => clk,
@@ -90,12 +94,14 @@ architecture structural of Pract3 is
 			d5 => d5,
 			d6 => d6,
 			d7 => d7);
+			
 	Cont8: ENTITY work.Contador8
 		port map(
 			clk => clk,
 			reset_n => reset_n,
 			en_cont8 => sal_cont1ms,
 			fin_cuenta => fin_cuenta);
+			
 	Multi: ENTITY work.Multiplexor
 		port map(
 			e7 => s0,

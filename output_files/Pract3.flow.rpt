@@ -1,5 +1,5 @@
 Flow report for Pract3
-Tue Mar 16 11:50:03 2021
+Tue Mar 16 17:10:15 2021
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,20 +40,20 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Mar 16 11:50:03 2021           ;
+; Flow Status                        ; Successful - Tue Mar 16 17:10:15 2021           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; Pract3                                          ;
-; Top-level Entity Name              ; Pract3                                          ;
+; Top-level Entity Name              ; Demultiplexor                                   ;
 ; Family                             ; Cyclone II                                      ;
 ; Device                             ; EP2C20F484C7                                    ;
 ; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 45 / 18,752 ( < 1 % )                           ;
-;     Total combinational functions  ; 45 / 18,752 ( < 1 % )                           ;
-;     Dedicated logic registers      ; 20 / 18,752 ( < 1 % )                           ;
-; Total registers                    ; 20                                              ;
-; Total pins                         ; 27 / 315 ( 9 % )                                ;
+; Total logic elements               ; 8 / 18,752 ( < 1 % )                            ;
+;     Total combinational functions  ; 8 / 18,752 ( < 1 % )                            ;
+;     Dedicated logic registers      ; 0 / 18,752 ( 0 % )                              ;
+; Total registers                    ; 0                                               ;
+; Total pins                         ; 11 / 315 ( 3 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 2,176 / 239,616 ( < 1 % )                       ;
+; Total memory bits                  ; 0 / 239,616 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 52 ( 0 % )                                  ;
 ; Total PLLs                         ; 0 / 4 ( 0 % )                                   ;
 +------------------------------------+-------------------------------------------------+
@@ -64,29 +64,40 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 03/16/2021 11:49:34 ;
+; Start date & time ; 03/16/2021 17:09:55 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Pract3              ;
 +-------------------+---------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                           ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 145862430211159.161589177409944       ; --            ; --          ; --             ;
-; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                                  ; --            ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)                ; <None>        ; --          ; --             ;
-; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP              ; 0                                     ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                              ; --            ; --          ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                 ; --            ; --          ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                ; --            ; --          ; Top            ;
-; POWER_BOARD_THERMAL_MODEL           ; None (CONSERVATIVE)                   ; --            ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION       ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY            ; output_files                          ; --            ; --          ; --             ;
-+-------------------------------------+---------------------------------------+---------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                     ;
++--------------------------------------+---------------------------------------+---------------+---------------+-----------------------+
+; Assignment Name                      ; Value                                 ; Default Value ; Entity Name   ; Section Id            ;
++--------------------------------------+---------------------------------------+---------------+---------------+-----------------------+
+; COMPILER_SIGNATURE_ID                ; 273406409017320.161591099506424       ; --            ; --            ; --                    ;
+; EDA_DESIGN_INSTANCE_NAME             ; i1                                    ; --            ; --            ; Multiplexor_vhd_tst   ;
+; EDA_DESIGN_INSTANCE_NAME             ; i1                                    ; --            ; --            ; Demultiplexor_vhd_tst ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; Demultiplexor_vhd_tst                 ; --            ; --            ; eda_simulation        ;
+; EDA_OUTPUT_DATA_FORMAT               ; Vhdl                                  ; --            ; --            ; eda_simulation        ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (VHDL)                ; <None>        ; --            ; --                    ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                       ; --            ; --            ; eda_simulation        ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/Multiplexor.vht   ; --            ; --            ; Multiplexor_vhd_tst   ;
+; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/Demultiplexor.vht ; --            ; --            ; Demultiplexor_vhd_tst ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Multiplexor_vhd_tst                   ; --            ; --            ; Multiplexor_vhd_tst   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; Demultiplexor_vhd_tst                 ; --            ; --            ; Demultiplexor_vhd_tst ;
+; EDA_TEST_BENCH_NAME                  ; Multiplexor_vhd_tst                   ; --            ; --            ; eda_simulation        ;
+; EDA_TEST_BENCH_NAME                  ; Demultiplexor_vhd_tst                 ; --            ; --            ; eda_simulation        ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                    ; --            ; --            ; --                    ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                     ; --            ; --            ; --                    ;
+; PARTITION_COLOR                      ; 16764057                              ; --            ; Demultiplexor ; Top                   ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                 ; --            ; Demultiplexor ; Top                   ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                ; --            ; Demultiplexor ; Top                   ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                   ; --            ; --            ; --                    ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --            ; --            ; --                    ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                          ; --            ; --            ; --                    ;
+; TOP_LEVEL_ENTITY                     ; Demultiplexor                         ; Pract3        ; --            ; --                    ;
++--------------------------------------+---------------------------------------+---------------+---------------+-----------------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -94,12 +105,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:06     ; 1.0                     ; 4639 MB             ; 00:00:02                           ;
-; Fitter                    ; 00:00:10     ; 1.0                     ; 4836 MB             ; 00:00:04                           ;
-; Assembler                 ; 00:00:02     ; 1.0                     ; 4541 MB             ; 00:00:02                           ;
-; TimeQuest Timing Analyzer ; 00:00:02     ; 1.0                     ; 4535 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4507 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:22     ; --                      ; --                  ; 00:00:10                           ;
+; Analysis & Synthesis      ; 00:00:03     ; 1.0                     ; 4635 MB             ; 00:00:02                           ;
+; Fitter                    ; 00:00:06     ; 1.0                     ; 4846 MB             ; 00:00:05                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 4555 MB             ; 00:00:02                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4539 MB             ; 00:00:01                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4515 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:16     ; --                      ; --                  ; 00:00:11                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -108,11 +119,11 @@ applicable agreement for further details.
 +---------------------------+------------------+-----------+------------+----------------+
 ; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
 +---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-7VQL0UCK  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; LAPTOP-7VQL0UCK  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; LAPTOP-7VQL0UCK  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-7VQL0UCK  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-7VQL0UCK  ; Windows 7 ; 6.2        ; x86_64         ;
+; Analysis & Synthesis      ; DESKTOP-ES1MQ7F  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-ES1MQ7F  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-ES1MQ7F  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-ES1MQ7F  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-ES1MQ7F  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 

@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Yago T\Desktop\Practica 3\Prac3SistemasDigv2\simulation\modelsim
+Edemultiplexor
+Z1 w1615910606
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx9 cycloneii 19 cycloneii_atom_pack 0 22 zUjlM<IUJVWSWg:L2<>ic3
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z7 DPx9 cycloneii 20 cycloneii_components 0 22 h@gSJ;Al32oYg[7^PbnAR0
+Z8 dC:\Users\Yago T\Desktop\Practica 3\Prac3SistemasDigv2\simulation\modelsim
+Z9 8Pract3.vho
+Z10 FPract3.vho
+l0
+L34
+VkFgAW7E2mPn8S]1;=dc:_0
+Z11 OV;C;10.1d;51
+31
+Z12 !s108 1615910838.172000
+Z13 !s90 -reportprogress|300|-93|-work|work|Pract3.vho|
+Z14 !s107 Pract3.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+!s100 cnG`A7?G?G`Fe:25>Kfeb0
+!i10b 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 13 demultiplexor 0 22 kFgAW7E2mPn8S]1;=dc:_0
+l99
+L62
+V_49QRQ8KA[ENFMl3KO`<d3
+R11
+31
+R12
+R13
+R14
+R15
+R16
+!s100 dPB=`:e7]gHUcT@GRTlSk3
+!i10b 1
+Edemultiplexor_vhd_tst
+Z17 w1615910557
+Z18 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R5
+R6
+R8
+Z19 8C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht
+Z20 FC:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht
+l0
+L31
+VXHTa6]@KiNlY0QUIaToC02
+!s100 6dTT7@hEab`<CnAZW>=:m3
+R11
+31
+!i10b 1
+Z21 !s108 1615910839.386000
+Z22 !s90 -reportprogress|300|-93|-work|work|C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht|
+Z23 !s107 C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht|
+R15
+R16
+Ademultiplexor_arch
+R18
+R5
+R6
+DEx4 work 21 demultiplexor_vhd_tst 0 22 XHTa6]@KiNlY0QUIaToC02
+l58
+L33
+VQ3;dnnFlFf6W5366aHHzc3
+!s100 mPAeAXDGJ1E4_O;]GkW6F3
+R11
+31
+!i10b 1
+R21
+R22
+R23
+R15
+R16

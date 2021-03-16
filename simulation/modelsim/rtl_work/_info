@@ -1,0 +1,77 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Yago T\Desktop\Practica 3\Prac3SistemasDigv2\simulation\modelsim
+Edemultiplexor
+Z1 w1614123704
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\Users\Yago T\Desktop\Practica 3\Prac3SistemasDigv2\simulation\modelsim
+Z5 8C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/Demultiplexor.vhd
+Z6 FC:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/Demultiplexor.vhd
+l0
+L4
+VAdmFBCSS6>aj[gGLo@hUP1
+Z7 OV;C;10.1d;51
+31
+Z8 !s108 1615911137.228000
+Z9 !s90 -reportprogress|300|-93|-work|work|C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/Demultiplexor.vhd|
+Z10 !s107 C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/Demultiplexor.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+!s100 GZlGc?3I;af54T]Yj<<J>2
+!i10b 1
+Abehavorial
+R2
+R3
+DEx4 work 13 demultiplexor 0 22 AdmFBCSS6>aj[gGLo@hUP1
+l10
+L9
+V62eF<aK=Vbz<khfS[`cHo0
+R7
+31
+R8
+R9
+R10
+R11
+R12
+!s100 [Bih=j0GL4SKmS3[OR?RD0
+!i10b 1
+Edemultiplexor_vhd_tst
+Z13 w1615910983
+Z14 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+R2
+R3
+R4
+Z15 8C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht
+Z16 FC:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht
+l0
+L31
+VXHTa6]@KiNlY0QUIaToC02
+!s100 6dTT7@hEab`<CnAZW>=:m3
+R7
+31
+!i10b 1
+Z17 !s108 1615911138.133000
+Z18 !s90 -reportprogress|300|-93|-work|work|C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht|
+Z19 !s107 C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht|
+R11
+R12
+Ademultiplexor_arch
+R14
+R2
+R3
+DEx4 work 21 demultiplexor_vhd_tst 0 22 XHTa6]@KiNlY0QUIaToC02
+l58
+L33
+V5z]2X0`FP^mC36AiQC98i3
+!s100 PQ3`m@Hkh82Lm`?:C:gLd2
+R7
+31
+!i10b 1
+R17
+R18
+R19
+R11
+R12

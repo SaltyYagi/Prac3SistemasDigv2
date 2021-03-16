@@ -1,0 +1,51 @@
+# Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+# do Pract3_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.0sp1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/Demultiplexor.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Demultiplexor
+# -- Compiling architecture behavorial of Demultiplexor
+# 
+# vcom -93 -work work {C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity Demultiplexor_vhd_tst
+# -- Compiling architecture Demultiplexor_arch of Demultiplexor_vhd_tst
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs="+acc"  Demultiplexor_vhd_tst
+# vsim -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L cycloneii -L rtl_work -L work -voptargs=\"+acc\" -t 1ps Demultiplexor_vhd_tst 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.demultiplexor_vhd_tst(demultiplexor_arch)
+# Loading work.demultiplexor(behavorial)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Error: Assertion violation.
+#    Time: 0 ps  Iteration: 0  Instance: /demultiplexor_vhd_tst
+# ** Failure: Fallo en el Demux
+#    Time: 0 ps  Iteration: 0  Process: /demultiplexor_vhd_tst/always File: C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht
+# Break in Process always at C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht line 85
+# Simulation Breakpoint: Break in Process always at C:/Users/Yago T/Desktop/Practica 3/Prac3SistemasDigv2/simulation/modelsim/Demultiplexor.vht line 85
+# MACRO ./Pract3_run_msim_rtl_vhdl.do PAUSED at line 17
