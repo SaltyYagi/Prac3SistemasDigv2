@@ -1,90 +1,90 @@
-library ieee;
-use ieee.std_logic_1164 .all;
+LIBRARY ieee;
+USE ieee.std_logic_1164 .ALL;
 
-entity Pract3 is
-	port (
-			clk     : in std_logic ;
-			reset_n : in std_logic ;
-			d0      : out std_logic;
-			d1      : out std_logic;
-			d2      : out std_logic;
-			d3      : out std_logic;
-			d4      : out std_logic;
-			d5      : out std_logic;
-			d6      : out std_logic;
-			d7      : out std_logic;
-			salida  : out std_logic_vector (16 downto 0));
-end Pract3 ;
+ENTITY Pract3 IS
+	PORT (
+		clk : IN STD_LOGIC;
+		reset_n : IN STD_LOGIC;
+		d0 : OUT STD_LOGIC;
+		d1 : OUT STD_LOGIC;
+		d2 : OUT STD_LOGIC;
+		d3 : OUT STD_LOGIC;
+		d4 : OUT STD_LOGIC;
+		d5 : OUT STD_LOGIC;
+		d6 : OUT STD_LOGIC;
+		d7 : OUT STD_LOGIC;
+		salida : OUT STD_LOGIC_VECTOR (16 DOWNTO 0));
+END Pract3;
 
-architecture structural of Pract3 is
-	signal s0,s1,s2,s3,s4,s5,s6,s7, s: std_logic_vector(7 downto 0);
-	signal fin_cuenta : std_logic_vector(2 downto 0);
-	signal sal_cont1ms: std_logic;
-	
-	begin
-	
-	R0: ENTITY work.Registro
-		port map(
+ARCHITECTURE structural OF Pract3 IS
+	SIGNAL s0, s1, s2, s3, s4, s5, s6, s7, s : STD_LOGIC_VECTOR(7 DOWNTO 0);
+	SIGNAL fin_cuenta : STD_LOGIC_VECTOR(2 DOWNTO 0);
+	SIGNAL sal_cont1ms : STD_LOGIC;
+
+BEGIN
+
+	R0 : ENTITY work.Registro
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01000001", --65=A
 			sal => s0);
-			
-	R1: ENTITY work.Registro
-		port map(
+
+	R1 : ENTITY work.Registro
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01100111", --103=g
 			sal => s1);
-	R2: ENTITY work.Registro
-		port map(
+	R2 : ENTITY work.Registro
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01110101", --117=u
 			sal => s2);
-	R3: ENTITY work.Registro
-		port map(
+	R3 : ENTITY work.Registro
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01100001", --97=a
 			sal => s3);
-			
-	R4: ENTITY work.Registro
-		port map(
+
+	R4 : ENTITY work.Registro
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01100011", --99=c
 			sal => s4);
-			
-	R5: ENTITY work.Registro
-		port map(
+
+	R5 : ENTITY work.Registro
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01100001", --97=a
 			sal => s5);
-			
-	R6: ENTITY work.Registro
-		port map(
+
+	R6 : ENTITY work.Registro
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01110100", --116=t
 			sal => s6);
-			
-	R7: ENTITY work.Registro
-		port map(
+
+	R7 : ENTITY work.Registro
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			en => "01100101", --101=e
 			sal => s7);
-			
-	Ascii: ENTITY work.AsciiA16Seg
-		port map(
+
+	Ascii : ENTITY work.AsciiA16Seg
+		PORT MAP(
 			clk => clk,
 			e => s,
 			s => salida);
-	
-	DeMux: ENTITY work.Demultiplexor
-		port map(
+
+	DeMux : ENTITY work.Demultiplexor
+		PORT MAP(
 			e => fin_cuenta,
 			d0 => d0,
 			d1 => d1,
@@ -94,16 +94,16 @@ architecture structural of Pract3 is
 			d5 => d5,
 			d6 => d6,
 			d7 => d7);
-			
-	Cont8: ENTITY work.Contador8
-		port map(
+
+	Cont8 : ENTITY work.Contador8
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			en_cont8 => sal_cont1ms,
 			fin_cuenta => fin_cuenta);
-			
-	Multi: ENTITY work.Multiplexor
-		port map(
+
+	Multi : ENTITY work.Multiplexor
+		PORT MAP(
 			e7 => s0,
 			e6 => s1,
 			e5 => s2,
@@ -114,22 +114,11 @@ architecture structural of Pract3 is
 			e0 => s7,
 			sel => fin_cuenta,
 			s => s);
-			
-	Cont1: ENTITY work.Contador1ms
-		port map(
+
+	Cont1 : ENTITY work.Contador1ms
+		PORT MAP(
 			clk => clk,
 			reset_n => reset_n,
 			sal_cont1 => sal_cont1ms);
-			
-end structural;	
 
-	
-	
-	
-
-		
-	
-	
-	
-			
-
+END structural;
